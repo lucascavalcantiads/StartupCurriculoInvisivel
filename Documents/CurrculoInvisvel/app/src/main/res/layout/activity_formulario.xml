@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioActivity">
+
+    <Button
+        android:id="@+id/btnFormularioProximo1"
+        android:layout_width="180dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/borda_arredondada"
+        android:text="Próximo"
+        android:textColor="@color/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnFormularioVoltar1"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnFormularioVoltar1"
+        android:layout_width="180dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/borda_arredondada"
+        android:text="Voltar"
+        android:textColor="@color/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFormularioProximo1"
+        app:layout_constraintEnd_toStartOf="@+id/btnFormularioProximo1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnFormularioProximo1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:text="Questão 01"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:text="Selecione a opção que você mais se identifica:"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:shadowColor="@color/ic_launcher_background1"
+        android:text="FORMULÁRIO"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="264dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <RadioButton
+            android:id="@+id/radioFormularioOpcao1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Animado"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioFormularioOpcao2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aventureiro"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioFormularioOpcao3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Analítico"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioFormularioOpcao4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adaptável"
+            android:textSize="18sp" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
